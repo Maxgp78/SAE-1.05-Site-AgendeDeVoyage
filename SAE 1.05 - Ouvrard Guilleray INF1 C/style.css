@@ -1,0 +1,224 @@
+/* GENERAL */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #3E3E3E;
+    margin: 30px;
+    font-family: Arial, serif;
+    position: relative;
+    min-height: 100%;
+}
+
+/* NAVBAR */
+nav {
+    border: 1px solid #C5C5C5;
+    border-radius: 8px;
+    background-color: #C5C5C5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 30px 0 0;
+}
+
+.navbar > li {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: #3E3E3E;
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+
+li > a:hover {
+    border-left: 3px solid #3E3E3E;
+    padding-left: 5px;
+}
+
+li > img {
+    margin: 5px;
+}
+
+/* ACCEUIL */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.presentation {
+    margin-bottom: 4em;
+}
+
+.choix > article > a > img {
+    border: 1px solid #C5C5C5;
+}
+
+.voyage {
+    border: 1px solid #C5C5C5;
+}
+
+.voyage:hover {
+    box-shadow: 0 0 10px 0 white;
+}
+
+
+.choix {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choix > article {
+    display: flex;
+    align-items: flex-start;
+    color: #C5C5C5;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.choix > article > div {
+    margin-left: 15px;
+}
+
+main > h2 {
+    color: #C5C5C5;
+}
+
+h2 > a {
+    text-decoration: none;
+    color: #C5C5C5;
+}
+
+h2 > a:hover {
+    color: #ffffff;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    background-color: #C5C5C5;
+    border-radius: 5px;
+    text-align: center;
+    color: #3E3E3E;
+    padding: 5px;
+    margin-top: 20px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer > a {
+    text-decoration: none;
+    color: #3E3E3E;
+}
+
+footer > a:hover {
+    box-shadow: 0 0 5px 0 white;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* VOYAGES */
+.text_ff {
+    color: #C5C5C5;
+}
+
+.haut {
+    display: flex;
+}
+
+.haut > .desc {
+}
+
+.desc_det{
+    display: flex;
+}
+
+.desc_det>div{
+    width: 50%;
+}
+
+.planning, .budget {
+    border: 1px solid #C5C5C5;
+    border-radius: 8px;
+    background-color: #C5C5C5;
+    padding: 5px;
+
+    margin-bottom: 20px;
+
+    color: #3E3E3E;
+}
+
+th, td {
+    border: 3px solid #3E3E3E;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+th:hover, td:hover {
+    background-color: #3E3E3E;
+    color: #C5C5C5;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #3E3E3E;
+}
+
+@media (max-width: 1200px) {
+    .images {
+        flex-direction: column;
+    }
+}
+
+.images > figure{
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+    background-color: #C5C5C5;
+    padding: 2px;
+}
+
+.images > figure > img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.images > figure > figcaption{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+.no_dec {
+    border: none;
+}
+
+.bas {
+    display: flex;
+    color: #C5C5C5;
+}
+
+.budget {
+    margin-right: 20px;
+    min-width: 30%;
+}
+
+dd {
+    list-style: inside;
+}
